@@ -14,9 +14,7 @@
   max-height: 500px;
 }
 
-.sedans,
-.suvs,
-.luxury {
+.division {
   height: inherit;
   width: 33.33333333333333333333333333333333333333%;
   display: flex;
@@ -25,29 +23,29 @@
   padding: 10px 30px 10px 20px;
 }
 
-.sedans {
+.division:first-child {
   background-color: hsl(31, 77%, 52%);
   border-radius: 3% 0 0 3%;
 }
 
-.sedans a {
+.division:first-child a {
   color: hsl(31, 77%, 52%);
 }
 
-.suvs {
+.division:nth-child(2) {
   background-color: hsl(184, 100%, 22%);
 }
 
-.suvs a {
+.division:nth-child(2) a {
   color: hsl(184, 100%, 22%);
 }
 
-.luxury {
+.division:nth-child(3) {
   background-color: hsl(179, 100%, 13%);
   border-radius: 0 3% 3% 0;
 }
 
-.luxury a {
+.division:nth-child(3) a {
   color: hsl(179, 100%, 13%);
 }
 
@@ -55,12 +53,12 @@ img {
   width: 40%;
 }
 
-.title {
+h1 {
   color: hsl(0, 0%, 95%);
   font-size: 2em;
 }
 
-.discription {
+p {
   color: hsla(0, 0%, 100%, 0.75);
   font-size: 20px;
   text-align: left;
@@ -102,17 +100,15 @@ a:active {
     width: 250px;
   }
 
-  .sedans,
-  .suvs,
-  .luxury {
+  .division {
     width: 200px;
   }
 
-  .sedans {
+  .division:first-child {
     border-radius: 3% 3% 0 0;
   }
 
-  .luxury {
+  .division:nth-child(3) {
     border-radius: 0 0 3% 3%;
   }
 }
