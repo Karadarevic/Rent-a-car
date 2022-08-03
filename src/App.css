@@ -32,12 +32,20 @@
   color: hsl(31, 77%, 52%);
 }
 
+.division:first-child a:active {
+  color: white;
+}
+
 .division:nth-child(2) {
   background-color: hsl(184, 100%, 22%);
 }
 
 .division:nth-child(2) a {
   color: hsl(184, 100%, 22%);
+}
+
+.division:nth-child(2) a:active {
+  color: white;
 }
 
 .division:nth-child(3) {
@@ -47,6 +55,10 @@
 
 .division:nth-child(3) a {
   color: hsl(179, 100%, 13%);
+}
+
+.division:nth-child(3) a:active {
+  color: white;
 }
 
 img {
@@ -84,7 +96,6 @@ a:hover {
 
 a:active {
   background-color: transparent;
-  color: white;
 }
 
 @media screen and (max-width: 600px) {
